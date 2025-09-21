@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf3e2;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2 {
+color: rgb(0, 116, 77);
+
+}
+
+  iframe[name="menu"] {
+    width: 30%;
+    height: 800px;
+  }
+  
+  iframe[name="contenu"] {
+    width: 65%;
+    height: 800px;
+  }

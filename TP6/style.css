@@ -1,0 +1,75 @@
+body {
+    background-color: #f5f0e1;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    color: #1a6fb3;
+    text-align: center;
+  }
+  
+  .bleu { color: blue; }
+  .vert { color: green; }
+  
+  form {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px gray;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 8px;
+    vertical-align: middle;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    width: 100%;
+    padding: 6px;
+    border: 2px solid blue;
+    border-radius: 30px;
+  }
+  
+  input[type="submit"] {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background: green;
+  }
+  
+  .center {
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    table, tr, td {
+      display: block;
+      width: 100%;
+    }
+    td {
+      padding: 5px 0;
+    }
+  }
+  
+ 
+  input[type="checkbox"]:not(:checked) + span {
+    color: red;
+  }
