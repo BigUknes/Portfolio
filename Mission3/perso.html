@@ -1,0 +1,98 @@
+<!-- Rayan Ghellab - BTS SIO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+  <title>Ma Page Perso</title>
+</head>
+<body>
+  <p><a href="index.html">← Retour à l'accueil</a></p>
+
+  <header>
+    <h1>Bienvenue sur ma page !</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#hobbies">Mes loisirs</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="about">
+    <h2>À propos de moi</h2>
+    <p>Je m'appelle <strong>Rayan</strong>. Étudiant en BTS SIO - SISR (enfin j'espere) orienté
+       réseaux et cybersécurité. Objectif à moyen terme : licence Réseaux & Télécom,
+       puis master en cyber. Je documente mes apprentissages (Windows/Linux, Virtualisation, SQL) et je construis
+       un petit portfolio de sites et labs.</p>
+    <img src="img/snorlax.jpg" alt="Portrait de Uknes" class="photo" width="30%">
+  </section>
+
+  <section id="hobbies">
+    <h2>Mes loisirs</h2>
+    <ul>
+      <li>Lire et se documenter sur l'actualité technologique</li>
+      <li>Jouer au echecs</li>
+      <li>Apprendre et expérimenter de nouveaux langages informatiques</li>
+      <li>Écouter de la musique et aller à des événements culturels</li>
+      <li>Regarder des films et séries</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projets</h2>
+    <p>Quelques réalisations ou travaux récents :</p>
+    <ol>
+      <li>Site d'événement + <strong>formulaire d'inscription</strong> (ce TP).</li>
+      <li>Lab <strong>Debian 13</strong> : réseau privé hôte, SSH, <strong>Apache2</strong>.</li>
+      <li>TP <strong>Administration Windows 11</strong> : comptes, services, planificateur, GPO locales, journaux.</li>
+      <li>Portfolio étudiant (HTML/CSS) avec projets et contacts.</li>
+      <li>Maquette de site pour artistes Femtogo & Baby Hayabusa (split diagonal, HTML/CSS/JS).</li>
+      <li>Rédaction : Traité de la Lucidité (plan, définitions, propositions, corollaires).</li>
+    </ol>
+  </section>
+
+  <section id="gallery">
+    <h2>Galerie</h2>
+    <img src="img/setup.jpg" alt="Setup bureau / étude" class="photo" width="30%">
+    <img src="img/event.jpg" alt="Capture site d'événement" class="photo" width="30%">
+    <img src="img/lap.png" alt="Lab Debian avec Apache" class="photo" width="30%">
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <form action="#" method="post">
+      <p>
+        <label for="nom">Nom</label><br>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" maxlength="40" required>
+      </p>
+      <p>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="vous@exemple.com" maxlength="60" required>
+      </p>
+      <p>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message..." maxlength="500" required></textarea>
+      </p>
+      <p><button type="submit">Envoyer</button></p>
+    </form>
+
+    <p>
+      <a href="https://github.com/BigUknes" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/rayan-ghellab-413aa9317/" target="_blank" rel="noopener">LinkedIn</a> ·
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Uknes — Page perso</p>
+  </footer>
+
+</body>
+</html>

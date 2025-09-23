@@ -1,0 +1,61 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF8DC;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form {
+    margin: 20px auto;
+    padding: 15px;
+    width: 70%;
+    background-color: #FFEBCD;
+    border-radius: 10px;
+  }
+  
+  .t {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  .t td {
+    padding: 8px;
+  }
+  
+  input, select, textarea, button {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    max-width: 30%;
+    max-height: 3%;
+  }
+  
+  .btn {
+    background-color: #DAA520;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #B8860B;
+  }
+  .btn.outline {
+    background: white;
+    border: 1px solid #DAA520;
+    color: #DAA520;
+  }
+  .btn.outline:hover {
+    background-color: #DAA520;
+    color: white;
+  }
+
+  #gallery {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;             
+    flex-wrap: wrap;       
+  }
+  #gallery img {
+    max-width: 30%;  
+    height: auto;
+  }

@@ -1,0 +1,91 @@
+<!-- Rayan Ghellab - BTS SIO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <p><a href="index.html">← Retour à l'accueil</a></p>
+  
+    <form class="form" action="#" method="post" enctype="multipart/form-data">
+      <table class="t" border="0">
+        <tr><td><label for="pseudo">Pseudo*</label></td>
+            <td><input id="pseudo" name="pseudo" type="text" placeholder="Mohadu69" maxlength="255" required></td></tr>
+  
+        <tr><td><label for="mdp">Mot de passe*</label></td>
+            <td><input id="mdp" name="mdp" type="password" placeholder="*******" maxlength="255" required></td></tr>
+  
+        <tr><td><label for="prenom">Prénom</label></td>
+            <td><input id="prenom" name="prenom" type="text" placeholder="Votre prénom" maxlength="255"></td></tr>
+  
+        <tr><td><label for="email">Email*</label></td>
+            <td><input id="email" name="email" type="email" placeholder="vous@exemple.fr" maxlength="255" required></td></tr>
+  
+        <tr><td>Avatar</td>
+            <td><input id="avatar" name="avatar" type="file" accept="image/*"></td></tr>
+  
+        <tr><td>Pays</td>
+            <td><select id="pays" name="pays">
+                  <option>France</option><option>Espagne</option>
+                  <option>Italie</option><option>Belgique</option>
+                </select></td></tr>
+  
+        <tr><td>Fruits préférés</td>
+            <td class="inline">
+              <label><input type="checkbox" name="fruit" value="orange"> Orange</label>
+              <label><input type="checkbox" name="fruit" value="fraise"> Fraise</label>
+              <label><input type="checkbox" name="fruit" value="poire"> Poire</label>
+            </td></tr>
+  
+        <tr><td>Civilité</td>
+            <td class="inline">
+              <label><input type="radio" name="civilite" value="Homme"> Homme</label>
+              <label><input type="radio" name="civilite" value="Femme"> Femme</label>
+              <label><input type="radio" name="civilite" value="Autre"> Autre</label>
+            </td></tr>
+  
+        <tr><td><label for="ville">Ville</label></td>
+            <td><input id="ville" name="ville" type="text" placeholder="Ville" maxlength="255"></td></tr>
+  
+        <tr><td><label for="cp">Code postal</label></td>
+            <td><input id="cp" name="cp" type="text" placeholder="75001" maxlength="255" pattern="\\d{5}" title="5 chiffres"></td></tr>
+  
+        <tr><td><label for="dept">N° département</label></td>
+            <td><input id="dept" name="dept" type="number" placeholder="75" min="1" max="976"></td></tr>
+  
+        <tr><td><label for="adresse">Adresse</label></td>
+            <td><textarea id="adresse" name="adresse" placeholder="Rue, complément" maxlength="255" rows="3"></textarea></td></tr>
+  
+        <tr><td><label for="naissance">Date de naissance</label></td>
+            <td><input id="naissance" name="naissance" type="date"></td></tr>
+  
+        <tr><td><label for="jauge">Jauge</label></td>
+            <td><input id="jauge" name="jauge" type="range" min="0" max="100" value="50"></td></tr>
+  
+        <tr><td><label for="tel">Téléphone</label></td>
+            <td><input id="tel" name="tel" type="tel" placeholder="06 12 34 56 78" maxlength="255"></td></tr>
+  
+        <tr><td><label for="search">Recherche</label></td>
+            <td><input id="search" name="search" type="search" placeholder="Mots-clés" maxlength="255"></td></tr>
+  
+        <tr><td><label for="url">URL</label></td>
+            <td><input id="url" name="url" type="url" placeholder="https://exemple.com" maxlength="255"></td></tr>
+  
+        <tr><td><label for="color">Couleur</label></td>
+            <td><input id="color" name="color" type="color" value="#D2B48C"></td></tr>
+  
+        <tr><td></td>
+            <td class="inline">
+              <button type="submit" class="btn">Valider</button>
+              <button type="reset" class="btn outline">Réinitialiser</button>
+            </td></tr>
+      </table>
+      <p class="note">* Champs obligatoires </p>
+    </form>
+  </body>
+  </html>

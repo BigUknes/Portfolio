@@ -1,0 +1,101 @@
+
+body {
+  font-family: 'Poppins', sans-serif;   /* police changée */
+  font-size: 16px;                      /* taille de base */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF8DC;            /* Cornsilk */
+  color: #333;
+}
+
+
+header {
+  background-color: #8B4513;            /* SaddleBrown */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #FFD700;                       /* doré */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;          /* effet hover */
+}
+nav ul li a:hover {
+  color: #FFF;                          /* devient blanc au survol */
+  text-decoration: underline;
+}
+
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  background-color: #FFEBCD;            /* BlanchedAlmond */
+  border-radius: 15px;                  /* bords plus arrondis */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+section:hover {
+  transform: translateY(-3px);          /* petit effet flottant */
+}
+
+
+section h2 {
+  text-align: center;
+  color: #8B4513;
+}
+
+
+section img {
+  display: flex;
+  margin: 15px auto;
+  max-width: 90%;
+  border-radius: 12px;                  /* arrondi sur les images */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+form input, form textarea, form button {
+  width: 90%;
+  max-width: 400px;
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font: inherit;
+}
+form button {
+  background-color: #DAA520;            /* GoldenRod */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+form button:hover {
+  background-color: #B8860B;            /* DarkGoldenRod */
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+}
