@@ -1,0 +1,84 @@
+body {
+
+    background-color: rgb(255, 191, 191);
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header { 
+    height: 100px;
+    width: 100%;
+    background-color: purple;
+    text-align: center;
+    margin: 2%;
+}
+
+
+.card1 {
+
+    float: left;
+    background-color: aliceblue;
+    border-radius: 35px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+
+}
+
+.card2 {
+
+    float: left;
+
+    background-color: aliceblue;
+    border-radius: 35px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+
+}
+
+.card3 {
+
+    float: left;
+
+    background-color: aliceblue;
+    border-radius: 35px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+
+}
+
+.title {
+
+    padding: 10px;
+    margin: 10px;
+    background-color: blueviolet;
+    text-align: center;
+    border-radius: 35px;
+
+}
+
+.text {
+    background-color: palevioletred;
+    text-align: center;
+    border-radius: 35px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.img {
+
+    justify-content: center;
+    border-radius: 35px;
+
+}
+
+footer {
+
+    background-color: blueviolet;
+    text-align: center;
+    clear: both;
+
+}
