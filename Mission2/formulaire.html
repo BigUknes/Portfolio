@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Recherche de stage de BTS :</h2>
+        <table border="1" width="800" height="500">
+
+          <tr>
+            <th colspan="2">Période de stage : Du 29 Mai au 5 Juillet 2023</th>
+          </tr>
+
+          <tr>
+            <td rowspan="2">
+              <img src="doc/logolycee.png" alt="Logo Lycée" width="120">
+            </td>
+            <td>Contacter une entreprise</td>
+          </tr>
+
+          <tr>
+            <td>Remplir la feuille d'engagement (à télécharger de l'ENT)</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3">
+              <img src="doc/logobts.png" alt="Logo BTS" width="120">
+            </td>
+
+            <td>Signature du responsable Entreprise</td>
+          </tr>
+          <tr>
+            <td>Signature du tuteur (Votre prof)</td>
+          </tr>
+          <tr>
+            <td>Délivrance convention de stage</td>
+          </tr>
+        </table>
+
+
+    <h2>🧾 Formulaire simple</h2>
+
+    <form>
+      <p>
+        Nom : <input type="text" name="nom">
+      </p>
+      <p>
+        Prénom : <input type="text" name="prenom">
+      </p>
+      <p>
+        Date de naissance : <input type="date" name="naissance">
+      </p>
+      <p>
+        Adresse postale : <br>
+        <textarea name="adresse" rows="4" cols="40"></textarea>
+      </p>
+     
+      <p>
+        Classe :
+        <select name="classe">
+          <option value="BTS1">BTS 1</option>
+          <option value="BTS2">BTS 2</option>
+          <option value="L3">L3</option>
+        </select>
+      </p>
+
+      <p>
+        <input type="submit" value="Valider">
+        <input type="reset" value="Annuler">
+      </p>
+    </form>
+  </center>
+</body>
+</html>
