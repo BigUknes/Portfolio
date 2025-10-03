@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma calculatrice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <center>
+
+      <header>
+          <h1>Ma calculatrice</h1>
+      
+        </header>
+      
+        <label for="t1">Nombre 1</label>
+        <input type="number" id="t1" placeholder="Saisir le premier nombre">
+      
+        <label for="t2">Nombre 2</label>
+        <input type="number" id="t2" placeholder="Saisir le second nombre">
+      
+
+        <div id="calcul">
+      
+        <button onclick="somme()">Somme</button>
+        <button onclick="soustraction()">Soustraction</button>
+        <button onclick="multiplication()">Multiplication</button>
+        <button onclick="division()">Division</button>
+      
+      
+        </div>
+
+      
+        <div id="special">
+      
+          <button onclick="paire()">Parité</button>
+          <button onclick="permute()">Permuter</button>
+          <button onclick="effacer()"> Effacer</button>
+      
+        </div>
+      
+      
+      <div id="rep">
+      
+        <input type="text" id="t3" placeholder="Voici le résultat !" readonly>
+        <input type="text" id="t4" placeholder="Parité du premier nombre" readonly>
+      
+      </div>
+      
+      <p>
+          Grâce à ce TP, j’ai appris à utiliser JavaScript pour aller plus loin qu’un simple calculateur. 
+          J’ai découvert comment permuter deux valeurs automatiquement et aussi comment vérifier la parité 
+          d’un nombre (savoir s’il est pair ou impair). Ces exercices m’ont permis de mieux comprendre 
+          l’utilisation du JavaScript pour manipuler les valeurs des champs d’un formulaire et afficher 
+          des résultats directement dans ma page web.
+        </p>
+      
+      <a href="../index.html">← Retour</a>
+
+
+  </center>
+</body>
+</html> 
