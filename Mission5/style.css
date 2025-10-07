@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding-left:25%;
+    padding-right: 25%;
+    font-size: larger;
+    color: #333;
+}
+
+.cl1 {
+
+    height: 340px;
+    width: 97%;
+    color: rgb(34, 34, 34);
+    background-color: rgb(255, 123, 0);
+    text-align: center;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+    align-self: center;
+}
+
+.info {
+
+    border-radius: 35px;
+float: left;
+margin: 2%;
+text-align: left;
+
+
+}
+
+.photo {
+
+    background-color: aliceblue;
+    border-radius: 90px;
+    float: right;
+margin: 4%;
+margin-right: 5%;
+    
+    }
+
+.pp {
+
+    width: 200px;
+    background-color: aliceblue;
+    border-radius: 90px;
+    float: left;
+
+
+}
+
+
+.cl2 {  
+
+    height: 25%;
+    width: 95%;
+    color: rgb(34, 34, 34);
+    background-color: rgb(255, 123, 0);
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    clear: both;
+    
+}
+
+.leftbox {
+
+    background-color: aliceblue;
+    margin-top: 50px;
+    width: 25%;
+    height: 80%;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+
+}
+
+.rightbox {
+    
+background-color: aliceblue;
+margin-top: 50px;
+    width: 65%;
+    height: 80%;
+    padding: 1%;
+    margin: 1%;
+    float: right;
+
+}
+
+.pretexte {
+
+    font-weight: bolder;
+    margin: 1%;
+font-size: larger;
+
+}
