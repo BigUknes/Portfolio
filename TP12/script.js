@@ -6,57 +6,73 @@ function moyenne() {
     var somme = Number(n1) + Number(n2) + Number(n3);
     var moyenne = somme / 3;
 
-    document.write("Voici la moyenne des notes : " + moyenne + "<br>");
+    var doc = document.getElementById("affichage").contentDocument;
+    doc.open();
 
-    if (moyenne < 10) {
-        document.write("Redoublant");
-    }
+    doc.write(`
+    <link rel="stylesheet" type="text/css" href="iframe.css">
+`);
 
-    else if (moyenne < 12) {
-        document.write("Admis – Passable !");
-    }
+    doc.write("Voici la moyenne des notes : " + moyenne + "<br>");
 
-    else if (moyenne < 14) {
-        document.write("Admis – bien !");
-    }
+    if (moyenne < 10) doc.write("Redoublant");
 
-    else {
-        document.write("Admis – Très bien !");
-    }
+    else if (moyenne < 12) doc.write("Admis – Passable !");
+    
+    else if (moyenne < 14) doc.write("Admis – bien !");
+    
+    else doc.write("Admis – Très bien !");
 
-    document.write("<br><br> <a href='index.html'> <--Retour </a>");
+    doc.close();
 }
+
+
+
+
 
 function temp() {
     var t1 = prompt("Donner la temperature (en C°):");
 
+    var doc = document.getElementById("affichage").contentDocument;
+    
+    doc.open();
 
-    if (t1 < 10) {
-        document.write("Froid");
-    }
+    doc.write(`
+    <link rel="stylesheet" type="text/css" href="iframe.css">
+`);
 
-    else if (t1 < 25) {
-        document.write("Normal");
-    }
+    if (t1 < 10) doc.write("Froid");
 
-    else {
-        document.write("Chaud");
-    }
+    else if (t1 < 25) doc.write("Normal");
 
-    document.write("<br><br> <a href='index.html'> <--Retour </a>");
+    else doc.write("Chaud");
+    
+    doc.close();
 }
 
+
+
+
+
 function comparaison() {
+
     var c1 = prompt("Donner le premier nombre :");
     var c2 = prompt("Donner le deuxieme nombre :");
 
-    if (c1>c2) {
-        document.write("le plus petit est " + c2 + " et le plus grand est " + c1);
-    }
+    var doc = document.getElementById("affichage").contentDocument;
+    doc.open();
 
-    else {
-        document.write("le plus petit est " + c1 +" le plus grand est " + c2);
-    }
+    doc.write(`
+    <link rel="stylesheet" type="text/css" href="iframe.css">
+`);
 
-document.write("<br><br> <a href='index.html'> <--Retour </a>");
- }
+
+    if (c1 > c2) {
+        doc.write("le plus petit est " + c2 + " et le plus grand est " + c1);
+
+    } else {
+        doc.write("le plus petit est " + c1 + " et le plus grand est " + c2);
+
+    }
+    doc.close();
+     }

@@ -23,3 +23,20 @@ button {
     border-color: orange;
 
 }
+
+iframe {
+
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+    height: 40%;
+    width: 80%;
+    color: orange;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+    border: 2%;
+    border-color: orange;
+
+}
+
