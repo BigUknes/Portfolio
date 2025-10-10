@@ -23,6 +23,8 @@ function moyenne() {
     else {
         document.write("Admis – Très bien !");
     }
+
+    document.write("<br><br> <a href='index.html'> <--Retour </a>");
 }
 
 function temp() {
@@ -40,6 +42,8 @@ function temp() {
     else {
         document.write("Chaud");
     }
+
+    document.write("<br><br> <a href='index.html'> <--Retour </a>");
 }
 
 function comparaison() {
@@ -54,5 +58,5 @@ function comparaison() {
         document.write("le plus petit est " + c1 +" le plus grand est " + c2);
     }
 
-
+document.write("<br><br> <a href='index.html'> <--Retour </a>");
  }
