@@ -29,11 +29,11 @@ function temp() {
     var t1 = prompt("Donner la temperature (en C°):");
 
 
-    if (moyenne < 10) {
+    if (t1 < 10) {
         document.write("Froid");
     }
 
-    else if (moyenne < 25) {
+    else if (t1 < 25) {
         document.write("Normal");
     }
 
@@ -47,11 +47,12 @@ function comparaison() {
     var c2 = prompt("Donner le deuxieme nombre :");
 
     if (c1>c2) {
-        document.write("le plus grand est " + c1);
+        document.write("le plus petit est " + c2 + " et le plus grand est " + c1);
     }
 
     else {
-        document.write("le plus grand est " + c2);
+        document.write("le plus petit est " + c1 +" le plus grand est " + c2);
     }
+
 
  }
