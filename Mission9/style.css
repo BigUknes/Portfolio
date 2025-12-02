@@ -1,0 +1,130 @@
+/* Auteur : [Ghellab Rayan] - Mission 9 */
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f2fd;
+    color: #444; 
+    margin: 0;
+    padding: 20px;
+}
+
+
+.conteneur {
+    max-width: 800px;
+    margin: 40px auto; 
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px; 
+    box-shadow: 0 10px 25px rgba(0, 100, 200, 0.1);
+}
+
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #e3f2fd;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    color: #1565c0; 
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #64b5f6; 
+    font-style: italic;
+}
+
+
+.question-bloc {
+    background-color: #f1f8ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2196f3; 
+    transition: transform 0.2s; 
+}
+
+
+.question-bloc:hover {
+    transform: translateX(5px);
+}
+
+h3 {
+    margin-top: 0;
+    color: #1976d2;
+}
+
+
+label {
+    display: block;
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+label:hover {
+    color: #2196f3;
+}
+
+
+.actions {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #e3f2fd;
+}
+
+
+input[type="button"] {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+input[type="button"]:active {
+    transform: scale(0.95);
+}
+
+
+.btn-primary {
+    background-color: #2196f3; 
+}
+.btn-primary:hover {
+    background-color: #1976d2;
+}
+
+.btn-secondary {
+    background-color: #90caf9; 
+    color: #1565c0 !important; 
+}
+.btn-secondary:hover {
+    background-color: #64b5f6;
+}
+
+.btn-danger {
+    background-color: #ff5252; 
+}
+.btn-danger:hover {
+    background-color: #d32f2f;
+}
+
+
+#resultat {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #2196f3;
+    font-weight: bold;
+    min-height: 30px; 
+}
