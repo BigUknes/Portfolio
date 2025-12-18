@@ -1,55 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --gold: #ffd700;
+    --dark-bg: #0a0a0a;
+    --card-bg: #1a1a1a;
+    --text-color: #f4f4f4;
+    --transition: all 0.3s ease;
+}
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: black;
-  color: #ffd700;
-  text-align: center;
-  line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header & Titres */
+header {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 h1 {
-  color: #ffd700;
-  text-align: center;
-  font-weight: 600;
-  margin: 25px 0 10px;
+    font-size: 2.5rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
-h5 {
-  text-align: center;
-  color: #ffd700;
-  font-weight: 600;
-  margin: 20px 0 10px;
+.underline {
+    width: 80px;
+    height: 4px;
+    background: var(--gold);
+    margin: 0 auto;
+    border-radius: 2px;
 }
 
-ul {
-  list-style: none;
-  padding: 15px;
-  margin: 15px auto;
-  width: 250px;
-  background: rgb(48, 48, 48);
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+h2 {
+    color: var(--gold);
+    font-weight: 600;
+    margin: 40px 0 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-ul li {
-  margin: 10px 0;
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
 }
 
-a {
-  display: block;
-  padding: 10px;
-  border-radius: 8px;
-  color: #ffd700;
-  text-decoration: none;
-  font-weight: 500;
-  background: #1a1a1a;
-  transition: background-color 0.2s, transform 0.2s;
+/* Grille de projets */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
 }
 
-a:hover {
-  background: #333;
-  transform: translateY(-2px);
+/* Cartes */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+    border-radius: 12px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
 }
+
+.card span {
+    z-index: 2;
+}
+
+/* Effets au survol */
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 215, 0, 0.05);
+    border-color: var(--gold);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 215, 0, 0.2);
+    color: var(--gold);
+}
+
+/* Styles spécifiques pour PDF/Missions */
+.card.special {
+    background: linear-gradient(145deg, #1a1a1a, #252525);
+}
+
+.card i {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--gold);
+}
+
+.card.mission {
+    border-left: 3px solid var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    .project-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+}
+
